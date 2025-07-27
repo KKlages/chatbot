@@ -8,7 +8,7 @@ import base64 # For potential future image support
 # --- Configuration ---
 # IMPORTANT: For production, store your API key securely using Streamlit Secrets.
 # Create a .streamlit/secrets.toml file with:
-# GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"
+GEMINI_API_KEY = "AIzaSyDoOd2jew96NkKa-PHRyjzgHImXlGPaq7w"
 # Learn more: https://docs.streamlit.io/develop/concepts/configuration/secrets
 try:
     GEMINI_API_KEY = st.secrets["AIzaSyDoOd2jew96NkKa-PHRyjzgHImXlGPaq7w"]
