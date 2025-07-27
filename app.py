@@ -9,13 +9,7 @@ import base64 # For potential future image support
 # IMPORTANT: For production, store your API key securely using Streamlit Secrets.
 # Create a .streamlit/secrets.toml file with:
 GEMINI_API_KEY = "AIzaSyDoOd2jew96NkKa-PHRyjzgHImXlGPaq7w"
-# Learn more: https://docs.streamlit.io/develop/concepts/configuration/secrets
-try:
-    GEMINI_API_KEY = st.secrets["AIzaSyDoOd2jew96NkKa-PHRyjzgHImXlGPaq7w"]
-except KeyError:
-    st.error("Gemini API Key not found! Please set it in Streamlit Secrets (`.streamlit/secrets.toml`).")
-    st.info("Example: `GEMINI_API_KEY = 'AIzaSyDoOd2jew96NkKa-PHRyjzgHImXlGPaq7w'`")
-    st.stop() # Stop the app if API key is missing
+
 
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent"
 # Note: gemini-pro is generally sufficient for text-based chat.
